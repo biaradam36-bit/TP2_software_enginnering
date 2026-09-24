@@ -1,4 +1,4 @@
-## Screenshots
+## Part1: HTML + CSS + Javascript
 
 <img width="1700" height="927" alt="Capture d&#39;écran 2026-09-24 122646" src="https://github.com/user-attachments/assets/4afd0852-e478-4e13-b9d6-e1eb062e3873" />
 <img width="1701" height="934" alt="Capture d&#39;écran 2026-09-24 122816" src="https://github.com/user-attachments/assets/5178c20e-14d3-4e2a-9a00-892f25ddc4cf" />
@@ -14,3 +14,9 @@
 <img width="1703" height="937" alt="Capture d&#39;écran 2026-09-24 122656" src="https://github.com/user-attachments/assets/794e85a5-cc68-4765-913a-f1d4f3114334" />
 <img width="1703" height="937" alt="Capture d&#39;écran 2026-09-24 122656" src="https://github.com/user-attachments/assets/866fd5e0-b569-4c19-b08d-e0a4616648fb" />
 <img width="1701" height="934" alt="Capture d&#39;écran 2026-09-24 122816" src="https://github.com/user-attachments/assets/22bfd503-97b2-455e-a248-883509267a47" />
+
+# Part2: From Files to Client/Server
+<img width="1871" height="748" alt="Capture d&#39;écran 2026-09-24 130614" src="https://github.com/user-attachments/assets/3bcb1037-289a-4e8d-9464-d104e7dd2f45" />
+<img width="1631" height="989" alt="Capture d&#39;écran 2026-09-24 130529" src="https://github.com/user-attachments/assets/121ee54e-bab7-4503-a1e8-83eb1490607d" />
+
+
