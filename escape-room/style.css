@@ -1,0 +1,411 @@
+body {
+    color: #ba95cc;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: radial-gradient(circle at top left,#6fa8dc,transparent 40%),
+    radial-gradient(circle at bottom right,#4f81bd,transparent 40%),
+    #263f5e;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:300px;
+    
+}
+h1{
+    color:#d9efff;
+    text-shadow: 0 0 12px rgba(160,210,255,0.45);
+}
+body p{
+    color: #b8d0ef;
+}
+.room {
+    width: 600px;
+    margin: 80px auto;
+    padding: 40px;
+    border: 2px solid #9fc5e8;
+    border-radius: 10px;
+    background-color: rgba(67,101,137,0.75);
+    box-shadow: 0 0 25px rgba(180,220,255,0.3);
+}
+.button {
+    display: block;
+    width: 350px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: #3f3f68;
+    color: #e5f3ff;
+    text-decoration: none;
+    border-radius: 8px;
+
+    transition:0.3s;
+
+}
+.button:hover {
+    background-color: #8ebce5;
+    color:#1e3550;
+    box-shadow: 0 0 15px rgba(200,230,255,0.6);
+}
+.access-denied{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+.wrong-door{
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    font-size:100px;
+    margin-bottom:15px;
+    animation: doorShake 0.5s ease-in-out;
+}
+.access-denied h1{
+    color: #ff7777;
+    font-size:40px;
+    text-shadow: 0 0 15px rgba(255,80,80,0.6);
+}
+.access-denied p{
+    color:#b8d0e5;
+    margin: 8px 0;
+}
+.back-button{
+    display:inline-block;
+    margin-top: 20px;
+    padding:12px 30px;
+    background-color: #3f3f68;
+    color:#e5f3ff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition:0.3s;
+}
+.back-button:hover{
+    background-color: #7fa8d1;
+    color:#1e3550;
+}
+@keyframes doorShake{
+    0%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(-10px);
+    }
+    40%{
+        transform: translateX(10px);
+    }
+    60%{
+        transform: translateX(-8px);
+    }
+    80%{
+        transform: translateX(8px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+.room-number {
+    color: #a9d5f5;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.question-box {
+    margin: 25px auto;
+    padding: 20px;
+
+    max-width: 500px;
+
+    border-left: 4px solid #9fc5e8;
+    border-radius: 8px;
+
+    background-color: rgba(30, 55, 85, 0.45);
+
+    color: #d9efff;
+}
+
+.door-choice {
+    margin-top: 20px;
+}
+
+
+.denied-room {
+    position: relative;
+}
+
+.warning-symbol {
+    font-size: 55px;
+
+    color: #ff8a8a;
+
+    text-shadow:
+        0 0 20px rgba(255, 70, 70, 0.7);
+
+    animation: warningPulse 1.5s infinite;
+}
+
+.denied-title {
+    color: #ff8585 !important;
+
+    text-shadow:
+        0 0 15px rgba(255, 70, 70, 0.6) !important;
+}
+
+.interactive-door {
+    position: relative;
+
+    width: 350px;
+    height: 280px;
+
+    margin: 30px auto;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    border: 2px solid #ff7777;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 25px rgba(255, 60, 60, 0.25);
+
+    transition: 0.3s;
+}
+
+.interactive-door img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.4s;
+}
+
+.interactive-door:hover img {
+    transform: scale(1.06);
+}
+
+.interactive-door:hover {
+    box-shadow:
+        0 0 35px rgba(255, 80, 80, 0.55);
+}
+
+.door-message {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: rgba(120, 20, 25, 0.65);
+
+    color: #ffeaea;
+
+    opacity: 0;
+
+    transition: 0.3s;
+}
+
+.door-message span {
+    font-size: 45px;
+}
+
+.door-message strong {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.door-message small {
+    margin-top: 5px;
+    color: #ffd0d0;
+}
+
+.interactive-door.active .door-message {
+    opacity: 1;
+}
+
+
+
+.victory-room {
+    width: 650px;
+
+    padding: 45px;
+
+    text-align: center;
+
+    border: 2px solid #9ff0c1;
+
+    border-radius: 15px;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(80, 200, 140, 0.18),
+            transparent 60%
+        ),
+        rgba(40, 90, 75, 0.75);
+
+    box-shadow:
+        0 0 40px rgba(100, 240, 170, 0.25);
+}
+
+.victory-icon {
+    font-size: 75px;
+
+    animation: unlock 1.5s ease-in-out infinite;
+}
+
+.victory-title {
+    color: #caffdf !important;
+
+    font-size: 45px;
+
+    text-shadow:
+        0 0 20px rgba(100, 255, 170, 0.65) !important;
+}
+
+.victory-room h2 {
+    color: #a7eac2;
+}
+
+.victory-room p {
+    color: #d4f5e2;
+}
+
+.exit-door {
+    position: relative;
+
+    width: 380px;
+    height: 280px;
+
+    margin: 30px auto;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    border: 2px solid #9ff0c1;
+
+    cursor: pointer;
+}
+
+.exit-door img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+.escape-message {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: rgba(30, 150, 90, 0.55);
+
+    color: white;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    opacity: 0;
+
+    transition: 0.4s;
+}
+
+.escape-message span {
+    font-size: 55px;
+}
+
+.exit-door:hover img {
+    transform: scale(1.06);
+}
+
+.exit-door:hover .escape-message {
+    opacity: 1;
+}
+
+.victory-button {
+    background-color: #376b58;
+}
+
+.victory-button:hover {
+    background-color: #8bd5aa;
+}
+
+
+
+
+.shake {
+    animation: doorShake 0.5s ease-in-out;
+}
+
+@keyframes doorShake {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-12px);
+    }
+
+    40% {
+        transform: translateX(12px);
+    }
+
+    60% {
+        transform: translateX(-8px);
+    }
+
+    80% {
+        transform: translateX(8px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes warningPulse {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes unlock {
+
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(8deg);
+    }
+}
